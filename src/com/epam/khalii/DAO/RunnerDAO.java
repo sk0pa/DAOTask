@@ -16,7 +16,7 @@ import java.util.List;
 public class RunnerDAO extends AbstractDAO <Actor, Film> {
     {
     }
-    public static final String SQL_GET_LAST_FILMS = "select * from film where date > (CURRENT_DATE - INTERVAL 1 YEAR)";
+    public static final String SQL_GET_LAST_FILMS = "select * from film where date > (((CURRENT_DATE - INTERVAL (DAY(CURRENT_DATE())-1) DAY) - INTERVAL (MONTH(CURRENT_DATE()) MONTH)-1)- INTERVAL 1 YEAR )";
 
 
     @Override

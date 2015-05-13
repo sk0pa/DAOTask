@@ -37,4 +37,17 @@ public class Actor extends Entity {
         this.name = name;
         this.birth = birth;
     }
+
+    public Actor(String name, Date birth) {
+        this.name = name;
+        this.birth = birth;
+    }
+
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "name='" + name + '\'' +
+                ", birth=" + birth +
+                '}';
+    }
 }

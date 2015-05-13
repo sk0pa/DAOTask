@@ -49,6 +49,12 @@ public class Film extends Entity {
         this.release = release;
     }
 
+    public Film(String name, String country, Date release) {
+        this.name = name;
+        this.country = country;
+        this.release = release;
+    }
+
     @Override
     public String toString() {
         return "Film{" +

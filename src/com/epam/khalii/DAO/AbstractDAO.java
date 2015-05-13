@@ -11,6 +11,6 @@ public abstract class AbstractDAO<K,T extends Entity> {
     public abstract List<K> findActors(T film) throws SQLException;
     public abstract List<K> findActors(int count) throws SQLException;
     public abstract List<K> findProducers() throws SQLException;
-    public abstract void deleteOldFilms() throws SQLException;
+    public abstract void deleteOldFilms(int years) throws SQLException;
 
 }
